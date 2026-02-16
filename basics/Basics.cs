@@ -15,13 +15,26 @@ namespace Basics.basics
             //Console.WriteLine(n + i);
 
             //Sum of numbers in range
-            int n = Convert.ToInt32((Console.ReadLine()));
-            int n1=Convert.ToInt32((Console.ReadLine())),sum=0;
+            //int n = Convert.ToInt32((Console.ReadLine()));
+            //int n1=Convert.ToInt32((Console.ReadLine())),sum=0;
+            //for(int i = n; i <= n1; i++)
+            //{
+            //    sum += i;
+            //}
+            //Console.WriteLine(sum);
+            int n =Convert.ToInt32(Console.ReadLine());
+            int n1=Convert.ToInt32(Console.ReadLine());
+            int c = 0;
             for(int i = n; i <= n1; i++)
             {
-                sum += i;
+                if (c == 0)
+                {
+                    Console.Write(i);
+                    c++;
+                }
+                else
+                    Console.Write(", "+i);
             }
-            Console.WriteLine(sum);
 
         }
     }
